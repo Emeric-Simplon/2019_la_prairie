@@ -1,0 +1,35 @@
+section {
+  margin-top: 25vw;
+  .row {
+    @include flex(center);
+    .card {
+      position: relative;
+      margin: 10px;
+      width: 30vw;
+      height: 35vw;
+      background-color: $cardColor;
+      p {
+        position: absolute;
+        bottom: 13vw;
+        left: 6vw;
+        font-size: 3vw;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.3s;
+        &:hover .card {
+          background-color: white;
+        }
+        &:hover ~ p {
+          opacity: 1;
+        }
+        &:hover {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+}

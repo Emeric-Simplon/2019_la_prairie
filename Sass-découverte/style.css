@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Anton";
+  src: url(medias/fonts/Anton.ttf);
+}
+
+header .logo img {
+  width: 8vw;
+  height: 10vw;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin: 15px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-right: 0px;
+}
+
+header nav ul li {
+  list-style: none;
+  padding-right: 20px;
+}
+
+header nav ul li a {
+  font-size: 1.7vw;
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid yellow;
+}
+
+header video {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+header .titleElt {
+  margin-top: 7vw;
+}
+
+header .titleElt h1 {
+  font-family: "Anton";
+  font-size: 5vw;
+  margin-left: 30%;
+  font-weight: lighter;
+}
+
+header .titleElt p {
+  font-family: "Pathway Gothic One";
+  font-size: 3vw;
+  margin-left: 30%;
+}
+
+section {
+  margin-top: 25vw;
+}
+
+section .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+section .row .card {
+  position: relative;
+  margin: 10px;
+  width: 30vw;
+  height: 35vw;
+  background-color: #e5e5e5;
+}
+
+section .row .card p {
+  position: absolute;
+  bottom: 13vw;
+  left: 6vw;
+  font-size: 3vw;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+section .row .card img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+section .row .card img:hover .card {
+  background-color: white;
+}
+
+section .row .card img:hover ~ p {
+  opacity: 1;
+}
+
+section .row .card img:hover {
+  opacity: 0.1;
+}
+
+.second .secondCard {
+  height: 20vw !important;
+  margin-bottom: 0px;
+  background-color: #d9d9d9;
+}
+
+.third {
+  position: relative;
+}
+
+.third .thirdCard {
+  position: absolute;
+  height: 50vw !important;
+  bottom: 15vw;
+  background-color: #d9d9d9;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 16vw;
+  background: #ffd7d6;
+}
+
+footer ul {
+  list-style: none;
+  padding: 10vw;
+}
+
+footer i {
+  font-size: 5vw;
+}
+
+footer .fa-envelope::after {
+  position: relative;
+  bottom: 1vw;
+  font-size: 2vw;
+  margin-left: 20px;
+  content: "Lorem.Ipsum@gmail.com";
+}
+
+footer .fa-instagram::after {
+  position: relative;
+  bottom: 1vw;
+  font-size: 2vw;
+  margin-left: 20px;
+  content: "@LoremIpsum";
+}
+
+body {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

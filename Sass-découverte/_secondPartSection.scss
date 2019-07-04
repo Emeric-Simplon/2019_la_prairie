@@ -1,0 +1,17 @@
+$unSizedCardColor: #d9d9d9;
+.second {
+  .secondCard {
+    height: 20vw !important;
+    margin-bottom: 0px;
+    background-color: $unSizedCardColor;
+  }
+}
+.third {
+  position: relative;
+  .thirdCard {
+    position: absolute;
+    height: 50vw !important;
+    bottom: 15vw;
+    background-color: $unSizedCardColor;
+  }
+}

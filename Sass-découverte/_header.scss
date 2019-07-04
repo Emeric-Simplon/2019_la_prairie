@@ -1,0 +1,50 @@
+header {
+  .logo {
+    img {
+      width: 8vw;
+      height: 10vw;
+    }
+  }
+  nav {
+    @include flex(space-between);
+    margin: 15px;
+    ul {
+      @include flex(space-between);
+      margin-right: 0px;
+      li {
+        list-style: none;
+
+        padding-right: 20px;
+        a {
+          font-size: 1.7vw;
+          text-decoration: none;
+          color: white;
+          &:hover {
+            border-bottom: 2px solid yellow;
+          }
+        }
+      }
+    }
+  }
+  video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .titleElt {
+    margin-top: 7vw;
+    h1 {
+      font-family: "Anton";
+      font-size: 5vw;
+      margin-left: 30%;
+      font-weight: lighter;
+    }
+    p {
+      font-family: "Pathway Gothic One";
+      font-size: 3vw;
+      margin-left: 30%;
+    }
+  }
+}

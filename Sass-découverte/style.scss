@@ -1,0 +1,28 @@
+@mixin flex($where) {
+  display: flex;
+  justify-content: $where;
+  margin: auto;
+}
+
+@mixin socialStyle() {
+  position: relative;
+  bottom: 1vw;
+  font-size: 2vw;
+  margin-left: 20px;
+}
+$cardColor: #e5e5e5;
+$unSizedCardColor: #d9d9d9;
+$footerColor: #ffd7d6;
+
+@font-face {
+  font-family: "Anton";
+  src: url(medias/fonts/Anton.ttf);
+}
+@import "_header.scss";
+@import "_firstPartSection.scss";
+@import "_secondPartSection.scss";
+@import "_footer.scss";
+
+body {
+  margin: 0;
+}
